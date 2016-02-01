@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'designs' => 'static_pages#designs'
   get 'testimonials' => 'static_pages#testimonials'
   get 'contact' => 'static_pages#contact'
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
