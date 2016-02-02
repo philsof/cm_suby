@@ -33,7 +33,7 @@ gem 'simple_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use Foundation for front-end design
+# Use Foundation for front-end
 gem 'foundation-rails'
 
 group :development, :test do
