@@ -1,10 +1,8 @@
 <div align="center">
-  <h3>Email us:</h3>
-
   <%= simple_form_for @contact, :html => {:class => 'class-goes-here' } do |f| %>
     <%= f.input :name, :required => true, :placeholder =>"Name" %>
     <%= f.input :email, :required => true, :placeholder => "Email" %>
-    <%= f.input :message, :as => :text, :required => true, :placeholder => "Your Message" %>
+    <%= f.input :message, :as => :text, :required => true, :placeholder => "Your Message", :input_html => { :rows => 7 , :style => 'width: 100%'} %>
     <div>
       </br>
       <%= f.button :submit, 'send message', :class=> "class-goes-here" %>
