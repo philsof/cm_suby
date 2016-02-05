@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # Example of regular route:
   get 'designs' => 'static_pages#designs'
   get 'testimonials' => 'static_pages#testimonials'
+  get 'process' => 'static_pages#process'
   get 'contact' => 'static_pages#contact'
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
