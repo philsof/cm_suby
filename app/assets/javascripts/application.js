@@ -16,3 +16,7 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(window).load(function() {
+  $("#container1").twentytwenty();
+});
