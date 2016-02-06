@@ -1,15 +1,51 @@
-<div class="top-bar-container" data-sticky-container>
+<!-- <div class="top-bar-container" data-sticky-container>
   <div class="sticky" data-sticky data-options="marginTop:0;" style="width:100%"">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text"><%=link_to "CM SUBY", root_path%></li>
+
+
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+
+<div class="top-bar-container" data-sticky-container>
+  <div class="sticky" data-sticky data-options="marginTop:0;">
+
+<div class="top-bar" id="example-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
+      <li class="menu-text"><%=link_to "CM SUBY", root_path%></li>
+      <li><%=link_to "DESIGNS", designs_path%></li>
+      <li><%=link_to "APPROACH", process_path%></li>
+      <li><%=link_to "TESTIMONIALS", testimonials_path %></li>
+      <li><%=link_to "CONTACT", contact_path %></li>
+    </ul>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+  </div>
+</div> -->
+
+  <div class="top-bar-container" data-sticky-container>
+    <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small; style="width:100%">
+      <div class="top-bar">
+        <div class="row column">
+          <div class="top-bar-left">
+            <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
+              <li><strong><%=link_to "CM SUBY", root_path%></strong></li>
               <li><%=link_to "DESIGNS", designs_path%></li>
               <li><%=link_to "APPROACH", process_path%></li>
               <li><%=link_to "TESTIMONIALS", testimonials_path %></li>
               <li><%=link_to "CONTACT", contact_path %></li>
-          </ul>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
