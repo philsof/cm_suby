@@ -75,6 +75,7 @@
   margin-left: -6px; }
 
 .twentytwenty-container {
+
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -84,6 +85,7 @@
   -webkit-user-select: none;
   -moz-user-select: none; }
   .twentytwenty-container img {
+
     max-width: 100%;
     position: absolute;
     top: 0;

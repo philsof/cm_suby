@@ -24,3 +24,5 @@ $(window).load(function() {
 $(window).load(function() {
   $("#container2").twentytwenty();
 });
+
+$(document).foundation('orbit', 'reflow');
