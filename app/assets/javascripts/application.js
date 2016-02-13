@@ -20,9 +20,3 @@ $(function(){ $(document).foundation(); });
 $(window).load(function() {
   $("#container1").twentytwenty();
 });
-
-$(window).load(function() {
-  $("#container2").twentytwenty();
-});
-
-$(document).foundation('orbit', 'reflow');
