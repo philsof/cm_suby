@@ -1,4 +1,4 @@
-<h2>DESIGN &amp; RENOVATION</h2>
+<h2>Design &amp; Renovation</h2>
 
 <ul class="accordion" data-accordion>
   <li class="accordion-navigation">
@@ -15,15 +15,13 @@
   </li>
 </ul>
 
-
-<ul class="tabs" data-tab>
+<ul class="tabs vertical" data-tab>
   <li class="tab-title active"><a href="#panel1">Kitchen</a></li>
   <li class="tab-title"><a href="#panel2">Bathroom</a></li>
-  <li class="tab-title"><a href="#panel3">Home Office</a></li>
-  <li class="tab-title"><a href="#panel4">Cabinetry</a></li>
-  <li class="tab-title"><a href="#panel5">Installation</a></li>
+  <li class="tab-title"><a href="#panel3">Cabinetry</a></li>
+  <li class="tab-title"><a href="#panel4">Installation</a></li>
+  <li class="tab-title"><a href="#panel5">Other</a></li>
 </ul>
-
 <div class="tabs-content">
   <div class="content active" id="panel1">
     <%= render 'galleries/kitchen' %>
@@ -32,13 +30,13 @@
     <%= render 'galleries/bathroom' %>
   </div>
   <div class="content" id="panel3">
-    <%= render 'galleries/office' %>
-  </div>
-  <div class="content" id="panel4">
     <%= render 'galleries/cabinetry' %>
   </div>
-  <div class="content" id="panel5">
+  <div class="content" id="panel4">
     <%= render 'galleries/installation' %>
+  </div>
+  <div class="content" id="panel5">
+    <%= render 'galleries/other' %>
   </div>
 </div>
 
