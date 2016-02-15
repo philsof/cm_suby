@@ -1,4 +1,4 @@
-
+<!--
 
       <div class="top-bar">
         <div class="row column">
@@ -13,3 +13,40 @@
           </div>
         </div>
       </div>
+ -->
+
+    <!-- Navigation -->
+    <div class="contain-to-grid sticky">
+
+      <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+          <li class="name">
+            <h2><div class="logo show-for-small-only"><%=link_to image_tag("small_logo.png"), root_path%></h2>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+
+          <div class="logo-wrapper hide-for-small-only">
+            <div class="logo">
+              <%=link_to image_tag("logo.png"), root_path%>
+            </div>
+          </div>
+
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><%=link_to "TESTIMONIALS", testimonials_path %></li>
+            <li><%=link_to "CONTACT", contact_path %></li>
+          </ul>
+
+          <!-- Left Nav Section -->
+          <ul class="left">
+          <li><%=link_to "DESIGNS", designs_path%></li>
+          <li><%=link_to "APPROACH", process_path%></li>
+          </ul>
+
+        </section>
+      </nav>
+
+    </div><!-- /navigation -->
