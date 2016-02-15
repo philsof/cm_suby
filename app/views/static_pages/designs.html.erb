@@ -1,44 +1,45 @@
 <h2>DESIGN &amp; RENOVATION</h2>
 
-<ul class="accordion" data-accordion data-allow-all-closed='true'>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">Services We Offer</a>
-          <div class="accordion-content" data-tab-content >
-            <p>Kitchen and Bathroom Design and Remodeling</p>
-            <p>Custom Shower Doors and Mirrors</p>
-            <p>Finished Basements</p>
-            <p>Custom Decks</p>
-            <p>Interior Renovation</p>
-            <p>Kitchen and Bathroom Design and Remodeling</p>
-            <p>Demolition Removal and Disposal</p>
-          </div>
-        </li>
-      </ul>
-
-
-<ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Kitchen</a></li>
-  <li class="tabs-title"><a href="#panel2">Bathroom</a></li>
-  <li class="tabs-title"><a href="#panel3">Home Office</a></li>
-  <li class="tabs-title"><a href="#panel4">Cabinetry</a></li>
-  <li class="tabs-title"><a href="#panel5">Installation</a></li>
+<ul class="accordion" data-accordion>
+  <li class="accordion-navigation">
+    <a href="#panel1a">Click to see Services We Offer</a>
+    <div id="panel1a" class="content">
+       <p>Kitchen and Bathroom Design and Remodeling</p>
+       <p>Custom Shower Doors and Mirrors</p>
+       <p>Finished Basements</p>
+       <p>Custom Decks</p>
+       <p>Interior Renovation</p>
+       <p>Kitchen and Bathroom Design and Remodeling</p>
+       <p>Demolition Removal and Disposal</p>
+    </div>
+  </li>
 </ul>
 
-<div class="tabs-content" data-tabs-content="example-tabs">
-  <div class="tabs-panel is-active" id="panel1">
+
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Kitchen</a></li>
+  <li class="tab-title"><a href="#panel2">Bathroom</a></li>
+  <li class="tab-title"><a href="#panel3">Home Office</a></li>
+  <li class="tab-title"><a href="#panel4">Cabinetry</a></li>
+  <li class="tab-title"><a href="#panel5">Installation</a></li>
+</ul>
+
+<div class="tabs-content">
+  <div class="content active" id="panel1">
     <%= render 'galleries/kitchen' %>
   </div>
-  <div class="tabs-panel" id="panel2">
+  <div class="content" id="panel2">
     <%= render 'galleries/bathroom' %>
   </div>
-  <div class="tabs-panel" id="panel3">
+  <div class="content" id="panel3">
     <%= render 'galleries/office' %>
   </div>
-  <div class="tabs-panel" id="panel4">
+  <div class="content" id="panel4">
     <%= render 'galleries/cabinetry' %>
   </div>
-  <div class="tabs-panel" id="panel5">
+  <div class="content" id="panel5">
     <%= render 'galleries/installation' %>
   </div>
 </div>
 
+<hr>
