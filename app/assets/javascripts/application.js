@@ -37,3 +37,7 @@ $(window).load(function() {
 $(window).load(function() {
   $("#container5").twentytwenty();
 });
+
+  $(window).load( function() {
+    $('#myslideshow1').smoothSlides();
+  });
