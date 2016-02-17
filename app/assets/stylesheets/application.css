@@ -66,3 +66,8 @@ h1, h2, h3, h4, h5, h6{
   padding: 100px;
 }
 
+.single-item{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}

@@ -15,7 +15,19 @@
 //= require foundation
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation();
+
+$('.single-item').slick({
+
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true
+
+
+});
 
 $(window).load(function() {
   $("#container1").twentytwenty();
@@ -24,7 +36,6 @@ $(window).load(function() {
 $(window).load(function() {
   $("#container2").twentytwenty();
 });
-
 
 $(window).load(function() {
   $("#container3").twentytwenty();
@@ -38,6 +49,12 @@ $(window).load(function() {
   $("#container5").twentytwenty();
 });
 
-  $(window).load( function() {
-    $('#myslideshow1').smoothSlides();
-  });
+$(window).load(function() {
+  $('#myslideshow1').smoothSlides();
+});
+
+
+});
+
+
+
