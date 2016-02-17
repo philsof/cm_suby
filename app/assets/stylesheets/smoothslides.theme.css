@@ -112,7 +112,7 @@
 /* Previous and Next buttons */
 .smoothslides-on a.ss-prev, .smoothslides-on a.ss-next {
 	position: absolute;
-	bottom:150px;
+	bottom:5px;
 	left:5px;
 	font-size:14px;
 	line-height: 1em;
