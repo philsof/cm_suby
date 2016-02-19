@@ -17,17 +17,17 @@
 
 $(function(){ $(document).foundation();
 
-$('.single-item').slick({
+// $('.single-item').slick({
 
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        arrows: true
+//         dots: true,
+//         infinite: true,
+//         speed: 300,
+//         slidesToShow: 2,
+//         slidesToScroll: 2,
+//         arrows: true
 
 
-});
+// });
 
 $(window).load(function() {
   $("#container1").twentytwenty();
@@ -50,8 +50,14 @@ $(window).load(function() {
 });
 
 $(window).load(function() {
+  $("#container6").twentytwenty();
+});
+
+$(window).load(function() {
   $('#myslideshow1').smoothSlides();
 });
+
+
 
 
 });
