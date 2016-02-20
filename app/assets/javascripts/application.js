@@ -54,6 +54,14 @@ $(window).load(function() {
 });
 
 $(window).load(function() {
+  $("#container7").twentytwenty();
+});
+
+$(window).load(function() {
+  $("#container8").twentytwenty();
+});
+
+$(window).load(function() {
   $('#myslideshow1').smoothSlides();
 });
 
