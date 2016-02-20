@@ -83,9 +83,3 @@ hr.style-two {
 a{
    font-size: 20px;
 }
-
-
-a:hover {
-    background-color: gray;
-    color:white;
-}
