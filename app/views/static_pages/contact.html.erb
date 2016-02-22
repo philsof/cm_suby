@@ -24,9 +24,19 @@
 <strong class="hide-for-small-only">
 
 <div class="medium-6 columns">
-
+  
 <%= render "contacts/new" %>
 
+<% if flash %>
+    <div>
+      <% flash.each do |key, value| %>
+        <div>
+          <a href="#" data-dismiss="alert">×</a>
+          <%= value %>
+        </div>
+      <% end %>      
+    </div>
+  <% end %>
 </div>
 
 </strong>
