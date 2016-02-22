@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
       render :'static_pages/contact'
     else
       flash.now[:error] = 'Error: Could not send message. Try to send form again, or simply send a regular email to cmsuby@gmail.com'
-      render :new
+      render :'static_pages/contact'
     end
   end
 end
