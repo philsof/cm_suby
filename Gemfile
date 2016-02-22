@@ -29,7 +29,7 @@ gem 'mail_form'
 gem 'simple_form'
 
 gem 'foundation-rails', '~> 5.5', '>= 5.5.3.2'
-
+gem 'rails_12factor'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
