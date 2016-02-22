@@ -1,7 +1,7 @@
 <div align="center">
   <h3>Email us:</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'class-goes-here' } do |f| %>
+  <%= simple_form_for @contact, :html => {:id => 'contact-form' } do |f| %>
     <%= f.input :name, label: false, :placeholder => "Name", :required => true %>
     <%= f.input :email, label: false, :placeholder => "Email", :required => true %>
     <%= f.input :message, label: false, :placeholder => "Message", :as => :text, :required => true %>
