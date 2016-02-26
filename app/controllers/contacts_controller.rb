@@ -6,11 +6,20 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
-    if @contact.deliver
-      flash.now[:notice] = 'Your message has been sent to cmsuby@gmail.com'
-      render :'static_pages/contact'
+    if request.xhr?
+      if @contact.deliver
+        render plain: "OK: Email sent."
+      else
+        render plain: "Error: email not sent.", status: 422
+      end
     else
-      render :'static_pages/contact'
+      if @contact.deliver
+        flash.now[:notice] = 'Thank you! Your message has been sent to cmsuby@gmail.com. We will respond promptly!'
+        render :'static_pages/contact'
+      else
+        flash.now[:notice] = 'Something went wrong, this email form is not working. Please send an email to cmsuby@gmail.com directly. Thank you!'
+        render :'static_pages/contact'
+      end
     end
   end
 end
