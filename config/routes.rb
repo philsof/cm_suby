@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   match '/contacts', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:new, :create]
-
+  mount Judge::Engine => '/judge'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

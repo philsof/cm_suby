@@ -1,13 +1,12 @@
 <div align="center">
   <h3>Email us:</h3>
-
-  <%= simple_form_for @contact, :html => {:class => 'class-goes-here' } do |f| %>
-    <%= f.input :name, label: false, :placeholder => "Name", :required => true %>
-    <%= f.input :email, label: false, :placeholder => "Email", :required => true %>
-    <%= f.input :message, label: false, :placeholder => "Message", :as => :text, :required => true %>
+  <%= form_for @contact, :builder => Judge::FormBuilder, url: '/contacts' do |f| %>
+    <%= f.text_field :name, placeholder: 'Name', :validate => true %>
+    <%= f.text_field :email, placeholder: 'Email', :validate => true %>
+    <%= f.text_area :message, placeholder: 'Message', :validate => true %>
     <div>
-      </br>
-      <%= f.button :submit, 'send message', :class=> "class-goes-here" %>
+      <br>
+      <%= f.submit "send message", class: 'button' %>
     </div>
   <% end %>
 </div>

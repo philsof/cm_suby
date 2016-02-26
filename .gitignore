@@ -13,4 +13,4 @@
 /tmp
 
 #Ignore local Ruby version
-.ruby-version
+/.ruby-version

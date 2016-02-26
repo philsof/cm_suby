@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require underscore
+//= require json2
+//= require judge
 //= require_tree .
 
 $(function(){ $(document).foundation();
