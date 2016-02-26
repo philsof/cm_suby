@@ -1,74 +1,60 @@
 <h2 class= "text-center">Home Renovations</h2>
 
 <div class="row">
-<div class="large-12 columns">
+  <div class="large-12 columns">
+    <div class="large-12">
+      <div class="hide-for-large">
+        <div id="featured" data-orbit>
+          <%= render 'galleries/banner' %>
+        </div>
+    </div>
 
-<div class="large-12">
-<div class="hide-for-large">
-<div id="featured" data-orbit>
-<img src="/images/index_slides/banner_slide_1.png">
-<img src="/images/index_slides/banner_slide_2.png">
-<img src="/images/index_slides/banner_slide_3.png">
-<img src="/images/index_slides/banner_slide_4.png">
-<img src="/images/index_slides/banner_slide_5.png">
-<img src="/images/index_slides/banner_slide_6.png">
-</div>
-</div>
+  <strong class = "show-for-large">
+    <div class="smoothslides" id="myslideshow1">
+          <%= render 'galleries/banner' %>
+    </div>
+  </strong>
 
-<strong class = "show-for-large">
-<div class="smoothslides" id="myslideshow1">
-<img src="/images/index_slides/banner_slide_1.png">
-<img src="/images/index_slides/banner_slide_2.png">
-<img src="/images/index_slides/banner_slide_3.png">
-<img src="/images/index_slides/banner_slide_4.png">
-<img src="/images/index_slides/banner_slide_5.png">
-<img src="/images/index_slides/banner_slide_6.png">
-</div>
-</strong>
+  <hr class="style-two">
 
+  <div class="row">
+    <h1 class = "text-center">Why Work with Us</h1>
+    <div class="large-4 medium-4 columns">
+      <%=link_to image_tag("index_intro/main_intro_1.png"), testimonials_path%>
+      <p>We have a long and growing list of happy customers. In fact, most of our customers use our services again and again for their homes. Browse our <strong><%= link_to "customer testimonials", testimonials_path %> </strong>– they speak for themselves!</p>
+    </div>
+    <div class="large-4 medium-4 columns">
+      <%=link_to image_tag("index_intro/main_intro_2.png"), approach_path%>
+        <p>We’re take pride in ensuring that every last detail of your project is perfect. We use the highest quality products and a meticulous work ethic to ensure a top of the line result. <strong><%= link_to "Click here", approach_path %></strong> to learn more about our process.</p>
+    </div>
+    <div class="large-4 medium-4 columns">
+      <%=link_to image_tag("index_intro/main_intro_3.png"), designs_path%>
+      <p>Take comfort in knowing that a professional contractor with full credentials and years of experience is taking care of your home. Check out our <strong><%= link_to "past works", designs_path %></strong>!</p>
+    </div>
+  </div>
 
-<hr class="style-two">
+  <hr class="style-two">
 
-<div class="row">
-<h1 class = "text-center">Why Work with Us</h1>
-<div class="large-4 medium-4 columns">
-<%=link_to image_tag("index_intro/main_intro_1.png"), testimonials_path%>
-<p>We have a long and growing list of happy customers. In fact, most of our customers use our services again and again for their homes. Browse our <strong><%= link_to "customer testimonials", testimonials_path %> </strong>– they speak for themselves!</p>
-</div>
-<div class="large-4 medium-4 columns">
-<%=link_to image_tag("index_intro/main_intro_2.png"), approach_path%>
-<p>We’re take pride in ensuring that every last detail of your project is perfect. We use the highest quality products and a meticulous work ethic to ensure a top of the line result. <strong><%= link_to "Click here", approach_path %></strong> to learn more about our process.</p>
-</div>
-<div class="large-4 medium-4 columns">
-<%=link_to image_tag("index_intro/main_intro_3.png"), designs_path%>
-<p>Take comfort in knowing that a professional contractor with full credentials and years of experience is taking care of your home. Check out our <strong><%= link_to "past works", designs_path %></strong>!</p>
-</div>
-</div>
+  <h1 class = "text-center">Before and After</h1>
 
-<hr class="style-two">
+  <div id='container3' div class="twentytwenty-container">
+    <img alt="Sample before" src="/images/testimonial/kitchen_before.png"/>
+    <img alt="Sample after" src="/images/testimonial/kitchen_after.png"/>
+  </div>
 
+  <p class="text-center">Browse some of our dramatic Before and After project pictures on the <strong><%= link_to "Testimonial Page", testimonials_path %></strong>.</p>
 
-<h1 class = "text-center">Before and After</h1>
+  <hr class="style-two">
 
-<div id='container3' div class="twentytwenty-container">
-  <img alt="Sample before" src="/images/testimonial/kitchen_before.png"/>
-  <img alt="Sample after" src="/images/testimonial/kitchen_after.png"/>
-</div>
-
-<p class="text-center">Browse some of our dramatic Before and After project pictures on the <strong><%= link_to "Testimonial Page", testimonials_path %></strong>.</p>
-
-<hr class="style-two">
-
-<div class="row">
-<div class="medium-6 columns medium-push-6">
-<img class="thumbnail" src="/images/index_intro/profile_shot.jpg">
-
-</div>
-<div class="medium-6 columns medium-pull-6">
-<h2>A Quality Renovation Starts with a Reliable Contractor...</h2>
-<p>At CM Suby, customer satisfaction is everything. We will work with you, alongside our design professional, from start to finish planning each detail with your approval. Once you are satisfied, we then begin ordering materials for the job and will not begin work until we have everything in our possession. We only start one project at a time so your project is always our number one priority.</p>
-</div>
-</div>
+  <div class="row">
+    <div class="medium-6 columns medium-push-6">
+    <img class="thumbnail" src="/images/index_intro/profile_shot.jpg">
+    </div>
+    <div class="medium-6 columns medium-pull-6">
+    <h2>A Quality Renovation Starts with a Reliable Contractor...</h2>
+    <p>At CM Suby, customer satisfaction is everything. We will work with you, alongside our design professional, from start to finish planning each detail with your approval. Once you are satisfied, we then begin ordering materials for the job and will not begin work until we have everything in our possession. We only start one project at a time so your project is always our number one priority.</p>
+    </div>
+  </div>
 
 <hr class="style-two">
 
@@ -84,26 +70,24 @@
   </div>
 </div>
 
-<strong class="hide-for-large-up"><hr class="style-two"></strong>
+  <strong class="hide-for-large-up"><hr class="style-two"></strong>
 
-<div class="large-4 columns">
-  <h4>Communicate with Us!</h4>
+    <div class="large-4 columns">
 
-<div class="show-for-large-only">
-  <ul class="button-group ">
-  <li><a href="tel:+1-973-951-5570" class="button large">1-973-951-5570</a></li>
-  <li><a href="mailto:cmsuby@gmail.com" class="button secondary large">cmsuby@gmail.com</a></li>
-</ul>
-</div>
+    <h4>Communicate with Us!</h4>
+    <div class="show-for-large-only">
+      <ul class="button-group ">
+        <%= render 'contacts/info' %>
+      </ul>
+    </div>
 
-<div class="hide-for-large-only">
-<div class="button-bar">
-<ul class="button-group">
-  <li><a href="tel:+1-973-951-5570" class="button large">1-973-951-5570</a></li>
-  <li><a href="mailto:cmsuby@gmail.com" class="button secondary large">cmsuby@gmail.com</a></li>
-</ul>
-</div>
-</div>
+  <div class="hide-for-large-only">
+    <div class="button-bar">
+      <ul class="button-group">
+      <%= render 'contacts/info' %>
+      </ul>
+    </div>
+  </div>
 
 </div>
 

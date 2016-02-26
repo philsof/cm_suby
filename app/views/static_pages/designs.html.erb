@@ -1,61 +1,56 @@
 <div class="row">
-<div class="large-12 columns">
+  <div class="large-12 columns">
+    <h2>Design &amp; Renovation</h2>
+    <p>At CM Suby, we offer a variety of services to suit your needs. Check out our gallery below to see our work!</p>
+  <hr class="style-two">
+  <table>
+    <thead>
+      <tr>
+        <th width="200"><h5>Services we offer</h5></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kitchen and Bathroom Design and Remodeling</td>
+        <td>Interior Renovation</td>
+        <td>Finished Basements</td>
+      </tr>
+      <tr>
+        <td>Custom Decks</td>
+        <td>Custom Shower Doors and Mirrors</td>
+        <td>Interior Repair</td>
+      </tr>
+      <tr>
+        <td>Installation of Hard Wood Flooring</td>
+        <td>Demolition Removal and Disposal</td>
+        <td>Cabinetry</td>
+      </tr>
+    </tbody>
+  </table>
 
-<h2>Design &amp; Renovation</h2>
+  <hr class="style-two">
+    <ul class="tabs" data-tab>
+      <li class="tab-title active"><a href="#panel1">Kitchen</a></li>
+      <li class="tab-title"><a href="#panel2">Bathroom</a></li>
+      <li class="tab-title"><a href="#panel3">Laundry Room</a></li>
+      <li class="tab-title"><a href="#panel4">Other</a></li>
+    </ul>
 
-<p>At CM Suby, we offer a variety of services to suit your needs. Check out our gallery below to see our work!</p>
-
-<hr class="style-two">
-
-<table>
-  <thead>
-    <tr>
-      <th width="200"><h5>Services we offer</h5></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Kitchen and Bathroom Design and Remodeling</td>
-      <td>Interior Renovation</td>
-      <td>Finished Basements</td>
-    </tr>
-    <tr>
-      <td>Custom Decks</td>
-      <td>Custom Shower Doors and Mirrors</td>
-      <td>Interior Repair</td>
-    </tr>
-    <tr>
-      <td>Installation of Hard Wood Flooring</td>
-      <td>Demolition Removal and Disposal</td>
-      <td>Cabinetry</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<hr class="style-two">
-
-<ul class="tabs" data-tab>
-  <li class="tab-title active"><a href="#panel1">Kitchen</a></li>
-  <li class="tab-title"><a href="#panel2">Bathroom</a></li>
-  <li class="tab-title"><a href="#panel3">Laundry Room</a></li>
-  <li class="tab-title"><a href="#panel4">Other</a></li>
-</ul>
-<div class="tabs-content">
-  <div class="content active" id="panel1">
-    <%= render 'galleries/kitchen' %>
+    <div class="tabs-content">
+      <div class="content active" id="panel1">
+        <%= render 'galleries/kitchen' %>
+      </div>
+      <div class="content" id="panel2">
+        <%= render 'galleries/bathroom' %>
+      </div>
+      <div class="content" id="panel3">
+        <%= render 'galleries/laundry' %>
+      </div>
+      <div class="content" id="panel4">
+        <%= render 'galleries/other' %>
+      </div>
+    </div>
   </div>
-  <div class="content" id="panel2">
-    <%= render 'galleries/bathroom' %>
-  </div>
-  <div class="content" id="panel3">
-    <%= render 'galleries/laundry' %>
-  </div>
-  <div class="content" id="panel4">
-    <%= render 'galleries/other' %>
-  </div>
-</div>
-</div>
 </div>
 
 <hr class="style-two">
