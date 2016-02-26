@@ -1,44 +1,39 @@
 <div class="row">
-<div class="medium-6 columns">
-<h3>CALL FOR A CONSULTATION</h3>
-<h4>References available upon request.</h4>
-<p>If you have any questions about the services we provide please call or email us.  Feel free to use the form on this page to send us an email.  Don't forget to include your correct email and phone number so that we can contact you.  If you love your renovation and want others to know, please send us your feedback!</p>
+  <div class="medium-6 columns">
+    <h3>CALL FOR A CONSULTATION</h3>
+    <h4>References available upon request.</h4>
+    <p>If you have any questions about the services we provide please call or email us.  Feel free to use the form on this page to send us an email.  Don't forget to include your correct email and phone number so that we can contact you.  If you love your renovation and want others to know, please send us your feedback!</p>
 
-<div class="show-for-large-only">
-  <ul class="button-group ">
-  <li><a href="tel:+1-973-951-5570" class="button large">1-973-951-5570</a></li>
-  <li><a href="mailto:cmsuby@gmail.com" class="button secondary large">cmsuby@gmail.com</a></li>
-</ul>
-</div>
-
-<div class="hide-for-large-only">
-<ul class="stack button-group">
-  <li><a href="tel:+1-973-951-5570" class="button large">1-973-951-5570</a></li>
-  <li><a href="mailto:cmsuby@gmail.com" class="button secondary large">cmsuby@gmail.com</a></li>
-</ul>
-<div class="space"></div>
-</div>
-
-</div>
-
-<strong class="hide-for-small-only">
-
-<div class="medium-6 columns">
-  
-<%= render "contacts/new" %>
-
-<% if flash %>
-    <div>
-      <% flash.each do |key, value| %>
-        <div>
-          <a href="#" data-dismiss="alert">×</a>
-          <%= value %>
-        </div>
-      <% end %>      
+    <div class="show-for-large-only">
+      <ul class="button-group ">
+            <%= render 'contacts/info' %>
+      </ul>
     </div>
-  <% end %>
+
+  <div class="hide-for-large-only">
+      <ul class="stack button-group">
+      <%= render 'contacts/info' %>
+      </ul>
+    <div class="space"></div>
+  </div>
 </div>
 
-</strong>
+  <strong class="hide-for-small-only">
+    <div class="medium-6 columns">
+      <%= render "contacts/new" %>
+
+  <% if flash %>
+      <div>
+        <% flash.each do |key, value| %>
+          <div>
+            <a href="#" data-dismiss="alert">×</a>
+            <%= value %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  </strong>
 
 <hr class="style-two">
