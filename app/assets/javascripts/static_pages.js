@@ -4,9 +4,9 @@
 
 $(document).ready(function() {
 
-  // $(window).load(function() {
-  //   $('#myslideshow1').smoothSlides();
-  // });
+  $(window).load(function() {
+    $('#myslideshow1').smoothSlides();
+  });
 
   $(window).load(function() {
     $("#container1").twentytwenty();
