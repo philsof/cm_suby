@@ -20,53 +20,6 @@
 
 $(function(){ $(document).foundation();
 
-// $(window).load(function() {
-//   $('#myslideshow1').smoothSlides();
-// });
-
-// $('.single-item').slick({
-
-//         dots: true,
-//         infinite: true,
-//         speed: 300,
-//         slidesToShow: 2,
-//         slidesToScroll: 2,
-//         arrows: true
-
-
-// });
-
-// $(window).load(function() {
-//   $("#container1").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container2").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container3").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container4").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container5").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container6").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container7").twentytwenty();
-// });
-
-// $(window).load(function() {
-//   $("#container8").twentytwenty();
-// });
 });
 
 

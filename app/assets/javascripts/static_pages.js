@@ -4,41 +4,41 @@
 
 $(document).ready(function() {
 
-$(window).load(function() {
-  $('#myslideshow1').smoothSlides();
-});
+  // $(window).load(function() {
+  //   $('#myslideshow1').smoothSlides();
+  // });
 
-$(window).load(function() {
-  $("#container1").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container1").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container2").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container2").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container3").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container3").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container4").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container4").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container5").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container5").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container6").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container6").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container7").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container7").twentytwenty();
+  });
 
-$(window).load(function() {
-  $("#container8").twentytwenty();
-});
+  $(window).load(function() {
+    $("#container8").twentytwenty();
+  });
 
   $('#new_contact').on('submit', function(event){
     event.preventDefault();
