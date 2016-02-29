@@ -1,15 +1,45 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
-$(window).load(function() {
-  $("#container1").twentytwenty();
-});
-
-$(window).load(function() {
-  $("#container2").twentytwenty();
-});
 
 $(document).ready(function() {
+
+  // $(window).load(function() {
+  //   $('#myslideshow1').smoothSlides();
+  // });
+
+  $(window).load(function() {
+    $("#container1").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container2").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container3").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container4").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container5").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container6").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container7").twentytwenty();
+  });
+
+  $(window).load(function() {
+    $("#container8").twentytwenty();
+  });
+
   $('#new_contact').on('submit', function(event){
     event.preventDefault();
     var valid_count = 0;
@@ -45,7 +75,7 @@ $(document).ready(function() {
         element.style.border = '3px solid red';
       }
     });
-    
+
     if (valid_count == 3){
       $.ajax({
         type: "POST",
